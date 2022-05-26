@@ -1,0 +1,252 @@
+:root {
+    --main-white: #ebebde;
+    --main-red: #e21340;
+    --dark-red: #9e0d2c ;
+    --main-dark: #161425;
+    --old-white: #b9b8bd94;
+  }
+  
+*{
+    margin: 0px;
+    Padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-white);
+    background-color: var(--main-dark);
+}
+
+
+
+/* Nav Bar */
+nav{
+    overflow: hidden;
+    background-color: var(--main-dark);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+    #j{
+        display: inline;
+        float: left;
+        padding-left: 30px;
+        font-size: 50px;
+        font-weight: 800;
+        color: var(--main-red);
+    }
+        #j:hover{
+            transform: rotate(8deg);
+            color: var(--main-white-)
+        }
+
+    #nav-bar{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .nav-anchor{
+        padding: 20px 0px;
+        font-size: 20px;
+        margin-right: 50px;
+    }
+
+    a{
+        color: var(--main-white);
+        text-decoration: none;
+    }
+        a:hover{
+            color: var(--main-red);
+            font-weight: 700;
+        }
+
+
+
+/* Homepage */
+main{
+    font-size: 4em;
+    color: var(--main-red);
+    height: 100vh;
+    padding: 300px 100px 0px 200px; 
+}
+
+    #jarnett{
+        padding-left: 120px;
+        color: var(--main-white);
+    }
+
+
+
+/* About */
+#about{
+    height: 100vh;
+    background-color: var(--main-white);
+    color: var(--main-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    h2{
+        color: var(--main-red);
+        margin: -20px 0 -10px 0;
+    }
+
+    #about-content{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+
+
+
+    }
+
+    #headshot{
+        height: 500px; 
+    }
+
+    article{
+        padding-left: 50px;
+        font-size: 1.5em;
+        width: 800px;
+    }
+
+    .sub-header{
+        font-size: 6em;
+    }
+
+
+
+/* Portfolio */
+#portfolio{
+    height: 100vh;
+    background-color: var(--main-dark);
+    color: var(--main-white);
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    h3{
+        font-size: 5em;
+        color: var(--main-red);
+        text-align: center;
+    }
+
+    #portfolio-table{
+        padding: 100px;
+        height: 55vh;
+    }
+
+
+    .thumbnail{
+        width: 300px;
+        margin: 50px 60px 0px;
+        border-radius: 20px;
+    }
+
+    .project-info{
+        color: var(--main-white);
+        width: 400px;
+        font-size: 25px;
+        text-align: center;
+        margin: 20px;
+        
+    }
+        
+        
+
+/* Resume */
+#resume{
+    height: 100vh;
+    background-color: var(--main-white);
+    color: var(--main-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px
+}
+
+    #resume-content{
+        display: flex;
+
+    }
+
+    #resume-img{
+        height: 500px;
+        margin-right: 80px;
+        box-shadow: 5px 6px var(--old-white);
+    }
+
+    #resume-link{
+        font-size: 55px;
+        font-weight: 700px;
+        padding-top: 80px;
+    }
+
+    #here{
+        color: var(--main-red)
+    }
+
+
+
+/* Contact */
+#contact{
+    height: 100vh;
+    background-color: var(--main-red);
+    color: var(--main-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px
+}
+
+    #h2-contact{
+        color: var(--main-dark);
+        text-align: center;
+    }
+
+    i{
+        font-size: 130px;
+        color: var(--main-dark);
+        padding: 40px;
+        text-align: center;
+    }
+
+/* media-queries */
+
+@media only screen and (max-width: 1400px){
+    body{
+        /* background-color: red; */
+    }
+    h1{
+        font-size: 9vw;
+        /* background-color: pink;     */
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    body{
+        /* background-color: blue; */
+    }
+    main{
+        padding: 300px 70px;
+    }
+    h1{
+        /* background-color: pink; */
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    body{
+        /* background-color: green; */
+    }
+    
+
+}
